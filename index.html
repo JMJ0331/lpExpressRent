@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Rent | Real Estate R.D.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <span class="logo-text">Express Rent</span>
+                <span class="logo-sub">Real Estate R.D.</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero container reveal">
+        <h1>Tu hogar<br>lejos de casa.</h1>
+        <p>Administramos apartamentos turísticos seleccionados para ofrecer una experiencia cómoda y premium.</p>
+        
+        <div class="hero-cards">
+            <div class="hero-mini-card">🏠 Apartamentos</div>
+            <div class="hero-mini-card">📶 Wi-Fi Rápido</div>
+            <div class="hero-mini-card">⭐ Atención</div>
+        </div>
+
+        <div class="scroll-indicator">↓</div>
+    </section>
+
+    <section class="search-section">
+        <div class="container">
+            <h2 class="section-title">Encuentra tu alojamiento</h2>
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="Busca por nombre del apartamento...">
+            </div>
+        </div>
+    </section>
+
+    <section class="container reveal">
+        <div class="apartments-grid" id="apartmentsGrid">
+            <!-- Inyectado por JS -->
+        </div>
+    </section>
+
+    <section class="container reveal">
+        <div class="about-card">
+            <h3>Sobre nosotros</h3>
+            <p style="margin-top: 12px; font-weight: 300;">Ofrecemos soluciones de hospitalidad moderna en República Dominicana, combinando tecnología y calidez humana.</p>
+        </div>
+    </section>
+
+    <section class="container reveal">
+        <h2 class="section-title">Nuestros servicios</h2>
+        <div class="apartments-grid" style="grid-template-columns: 1fr 1fr; gap: 12px;">
+            <div class="hero-mini-card">⭐ Atención 24/7</div>
+            <div class="hero-mini-card">📍 Ubicación Premium</div>
+            <div class="hero-mini-card">🏠 Verificados</div>
+            <div class="hero-mini-card">📱 Soporte Digital</div>
+        </div>
+    </section>
+
+    <section class="container reveal" style="margin-top: 60px;">
+        <h2 class="section-title">Explora otros destinos</h2>
+        <div class="horizontal-scroll" id="otherApts">
+            <!-- Inyectado por JS -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="logo-container">
+                <span class="logo-text">Express Rent</span>
+                <span class="logo-sub">Real Estate R.D.</span>
+            </div>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+                <a href="#">WhatsApp</a>
+            </div>
+            <p style="font-size: 0.8rem; color: #999;">© 2024 Express Rent. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content" id="modalBody">
+            <!-- Inyectado por JS -->
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
