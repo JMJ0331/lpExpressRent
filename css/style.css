@@ -106,6 +106,9 @@ header {
 }
 
 .hero-mini-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #fff;
     padding: 16px 8px;
     border-radius: var(--radius-md);
@@ -119,6 +122,10 @@ header {
 .hero-mini-card:hover {
     border: #b4b4b4 1px solid;
     cursor: default;
+}
+
+.hero-mini-card img {
+    margin-right: 8px;
 }
 
 .scroll-indicator {
