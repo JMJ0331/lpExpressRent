@@ -9,7 +9,8 @@ const apartments = [
         address: "Calle Padre Fortín 25, La Esmeralda, Santiago de los Caballeros, 51000, RD",
         ssid: "BPN-((( Rafi ))) -5g",
         pass: "3412085110",
-        maps: "https://www.google.com/maps/dir/?api=1&destination=19.350972,-70.988778"
+        maps: "https://www.google.com/maps/dir/?api=1&destination=19.350972,-70.988778",
+        contacts: '(809) 975-2323, (829) 627-2584, (809) 850-7608'
     },
     {
         id: 2,
@@ -136,6 +137,7 @@ window.openModal = function (id) {
                 <img src="${apt.img}" style="width:100%; border-radius:16px; margin-bottom:20px;">
                 <p style="color:#666">${apt.description}</p>
                 <p style="margin-top:10px; font-weight:500;">📍 ${apt.address}</p>
+                <p>Ayuda al cliente: ${apt.contacts} (WhatsApp)<p>
                 
                 <div class="wifi-box">
                     <p style="font-size:0.8rem; font-weight:700; margin-bottom:12px;">INFORMACIÓN WI-FI</p>
