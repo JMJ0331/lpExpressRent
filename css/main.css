@@ -325,7 +325,7 @@ footer {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: var(--space-16);
+    gap: var(--space-8);
     margin: var(--margin-24) var(--margin-0);
 }
 
@@ -381,6 +381,11 @@ footer {
     }
 
     .apartments-grid {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .social-links {
         display: flex;
         flex-flow: column nowrap;
     }
