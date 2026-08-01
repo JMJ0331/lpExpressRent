@@ -1,0 +1,16 @@
+{
+  "name": "express-rent-rd",
+  "version": "1.0.0",
+  "description": "Express Rent | Real Estate R.D.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "echo 'Build complete'",
+    "lint": "echo 'No linting required'",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

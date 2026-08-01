@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Typographies */
+  --font-family: 'Inter', 'Nunito', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* Transition */
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Headlines */
+  --h1: clamp(1.8rem, 4.5vw, 2.75rem);
+  --h2: clamp(1.45rem, 3.5vw, 2.125rem);
+  --h3: clamp(1.3rem, 2.8vw, 1.75rem);
+  --h4: clamp(1.15rem, 2.2vw, 1.5rem);
+  --h5: clamp(1.05rem, 1.8vw, 1.25rem);
+  --h6: clamp(1rem, 1.5vw, 1.15rem);
+
+  /* Other sizes */
+  --font-lg: clamp(1.25rem, 2.5vw, 1.75rem);
+  --font-md: clamp(1.1rem, 2vw, 1.35rem);
+  --font-sm: clamp(0.925rem, 1.5vw, 1.05rem);
+  --font-xsm: clamp(0.8rem, 1.2vw, 0.875rem);
+
+  /* Body */
+  --body: 1rem;
+
+  /* Button texts */
+  --button-lg: 1.125rem;
+  --button-md: 1rem;
+  --button-sm: 0.875rem;
+
+  /* Spacing */
+  --space-0: 0rem;
+  --space-2: 0.125rem;
+  --space-4: 0.25rem;
+  --space-8: 0.5rem;
+  --space-16: 1rem;
+  --space-24: 1.5rem;
+  --space-32: 2rem;
+  --space-40: 2.5rem;
+  --space-48: 3rem;
+  --space-56: 3.5rem;
+  --space-64: 4rem;
+  --space-72: 4.5rem;
+  --space-80: 5rem;
+  --space-88: 5.5rem;
+  --space-96: 6rem;
+  --space-104: 6.5rem;
+  --space-108: 6.75rem;
+  --space-112: 7rem;
+  --space-120: 7.5rem;
+  --space-128: 8rem;
+  --space-136: 8.5rem;
+  --space-144: 9rem;
+  --space-152: 9.5rem;
+  --space-160: 10rem;
+  --space-168: 10.5rem;
+  --space-176: 11rem;
+  --space-184: 11.5rem;
+  --space-192: 12rem;
+
+  /* Padding */
+  --padding-0: 0rem;
+  --padding-2: 0.125rem;
+  --padding-4: 0.25rem;
+  --padding-8: 0.5rem;
+  --padding-16: 1rem;
+  --padding-24: 1.5rem;
+  --padding-32: 2rem;
+  --padding-40: 2.5rem;
+  --padding-48: 3rem;
+  --padding-56: 3.5rem;
+  --padding-64: 4rem;
+  --padding-72: 4.5rem;
+  --padding-80: 5rem;
+  --padding-88: 5.5rem;
+  --padding-96: 6rem;
+  --padding-104: 6.5rem;
+  --padding-108: 6.75rem;
+  --padding-112: 7rem;
+  --padding-120: 7.5rem;
+  --padding-128: 8rem;
+  --padding-136: 8.5rem;
+  --padding-144: 9rem;
+  --padding-152: 9.5rem;
+  --padding-160: 10rem;
+  --padding-168: 10.5rem;
+  --padding-176: 11rem;
+  --padding-184: 11.5rem;
+  --padding-192: 12rem;
+
+  /* Margin */
+  --margin-0: 0rem;
+  --margin-2: 0.125rem;
+  --margin-4: 0.25rem;
+  --margin-8: 0.5rem;
+  --margin-16: 1rem;
+  --margin-24: 1.5rem;
+  --margin-32: 2rem;
+  --margin-40: 2.5rem;
+  --margin-48: 3rem;
+  --margin-56: 3.5rem;
+  --margin-64: 4rem;
+  --margin-72: 4.5rem;
+  --margin-80: 5rem;
+  --margin-88: 5.5rem;
+  --margin-96: 6rem;
+  --margin-104: 6.5rem;
+  --margin-108: 6.75rem;
+  --margin-112: 7rem;
+  --margin-120: 7.5rem;
+  --margin-128: 8rem;
+  --margin-136: 8.5rem;
+  --margin-144: 9rem;
+  --margin-152: 9.5rem;
+  --margin-160: 10rem;
+  --margin-168: 10.5rem;
+  --margin-176: 11rem;
+  --margin-184: 11.5rem;
+  --margin-192: 12rem;
+
+  /* Border */
+  --border-0: 0rem;
+  --border-2: 0.125rem;
+  --border-4: 0.25rem;
+  --border-8: 0.5rem;
+  --border-16: 1rem;
+  --border-24: 1.5rem;
+  --border-32: 2rem;
+  --border-40: 2.5rem;
+  --border-48: 3rem;
+  --border-56: 3.5rem;
+  --border-64: 4rem;
+  --border-72: 4.5rem;
+  --border-80: 5rem;
+  --border-88: 5.5rem;
+  --border-96: 6rem;
+  --border-104: 6.5rem;
+  --border-108: 6.75rem;
+  --border-112: 7rem;
+  --border-120: 7.5rem;
+  --border-128: 8rem;
+  --border-136: 8.5rem;
+  --border-144: 9rem;
+  --border-152: 9.5rem;
+  --border-160: 10rem;
+  --border-168: 10.5rem;
+  --border-176: 11rem;
+  --border-184: 11.5rem;
+  --border-192: 12rem;
+
+  /* Border radius */
+  --borderR-0: 0rem;
+  --borderR-2: 0.125rem;
+  --borderR-4: 0.25rem;
+  --borderR-8: 0.5rem;
+  --borderR-16: 1rem;
+  --borderR-24: 1.5rem;
+  --borderR-32: 2rem;
+  --borderR-40: 2.5rem;
+  --borderR-48: 3rem;
+  --borderR-56: 3.5rem;
+  --borderR-64: 4rem;
+  --borderR-72: 4.5rem;
+  --borderR-80: 5rem;
+  --borderR-88: 5.5rem;
+  --borderR-96: 6rem;
+  --borderR-104: 6.5rem;
+  --borderR-108: 6.75rem;
+  --borderR-112: 7rem;
+  --borderR-120: 7.5rem;
+  --borderR-128: 8rem;
+  --borderR-136: 8.5rem;
+  --borderR-144: 9rem;
+  --borderR-152: 9.5rem;
+  --borderR-160: 10rem;
+  --borderR-168: 10.5rem;
+  --borderR-176: 11rem;
+  --borderR-184: 11.5rem;
+  --borderR-192: 12rem;
+
+  /* Shadows */
+  --shadow-100: 0 5px 10px -1px rgba(174, 174, 174, 0.10);
+  --shadow-200: 0 5px 20px -2px rgba(174, 174, 174, 0.20);
+  --shadow-300: 0 5px 30px -3px rgba(174, 174, 174, 0.30);
+  --shadow-400: 0 5px 40px -4px rgba(174, 174, 174, 0.40);
+  --shadow-500: 0 5px 50px -5px rgba(174, 174, 174, 0.50);
+  --shadow-600: 0 5px 60px -6px rgba(174, 174, 174, 0.60);
+  --shadow-700: 0 5px 70px -7px rgba(174, 174, 174, 0.70);
+  --shadow-800: 0 5px 80px -8px rgba(174, 174, 174, 0.80);
+  --shadow-900: 0 5px 90px -9px rgba(174, 174, 174, 0.90);
+
+  /* White */
+  --white-50: #FFFFFF;
+  --white-100: #FFFFFF;
+  --white-200: #FFFFFF;
+  --white-300: #FFFFFF;
+  --white-400: #FFFFFF;
+  --white-500: #FFFFFF;
+  --white-600: #E8E8E8;
+  --white-700: #B5B5B5;
+  --white-800: #8C8C8C;
+  --white-900: #6B6B6B;
+
+  /* Black */
+  --black-50: #E7E7E7;
+  --black-100: #B5B6B4;
+  --black-200: #929290;
+  --black-300: #60605D;
+  --black-400: #41413D;
+  --black-500: #11120D;
+  --black-600: #0F100C;
+  --black-700: #0C0D09;
+  --black-800: #090A07;
+  --black-900: #070805;
+
+  /* Blue */
+  --blue-50: #E6F4FF;
+  --blue-100: #B0DEFF;
+  --blue-200: #8ACEFF;
+  --blue-300: #54B8FF;
+  --blue-400: #33AAFF;
+  --blue-500: #0095FF;
+  --blue-600: #0088E8;
+  --blue-700: #006AB5;
+  --blue-800: #00528C;
+  --blue-900: #003F6B;
+
+  /* Yellow */
+  --yellow-50: #FFF7E6;
+  --yellow-100: #FFE5B0;
+  --yellow-200: #FFD88A;
+  --yellow-300: #FFC654;
+  --yellow-400: #FFBB33;
+  --yellow-500: #FFAA00;
+  --yellow-600: #E89B00;
+  --yellow-700: #B57900;
+  --yellow-800: #8C5E00;
+  --yellow-900: #6B4700;
+
+  /* Green */
+  --green-50: #ECF8EF;
+  --green-100: #C5E9CD;
+  --green-200: #A9DEB4;
+  --green-300: #81CF92;
+  --green-400: #69C57D;
+  --green-500: #43B75D;
+  --green-600: #3DA755;
+  --green-700: #308242;
+  --green-800: #256533;
+  --green-900: #1C4D27;
+
+  /* Red */
+  --red-50: #FDECEC;
+  --red-100: #FAC5C3;
+  --red-200: #F7A9A7;
+  --red-300: #F4827E;
+  --red-400: #F16965;
+  --red-500: #EE443F;
+  --red-600: #D93E39;
+  --red-700: #A9302D;
+  --red-800: #832523;
+  --red-900: #641D1A;
+
+}
+
+/* iPads */
+@media (max-width: 768px) {
+  :root {
+    --h1: 2rem;
+    --h2: 1.6rem;
+    --h3: 1.4rem;
+    --h4: 1.25rem;
+    --h5: 1.15rem;
+    --h6: 1.05rem;
+
+    --font-lg: 1.35rem;
+    --font-md: 1.15rem;
+    --font-sm: 0.95rem;
+    --font-xsm: 0.825rem;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 575px) {
+  :root {
+    --h1: 1.75rem;
+    --h2: 1.45rem;
+    --h3: 1.3rem;
+    --h4: 1.15rem;
+    --h5: 1.05rem;
+    --h6: 0.95rem;
+
+    --font-lg: 1.2rem;
+    --font-md: 1.05rem;
+    --font-sm: 0.9rem;
+    --font-xsm: 0.8rem;
+  }
+}
